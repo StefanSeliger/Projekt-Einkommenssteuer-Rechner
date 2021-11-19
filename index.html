@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Einkommenssteuerrechner</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <main>
+        <h1>Einkommenssteuerrechner</h1>
+        <section>
+            <form action="">
+                <article>
+                    <h2>Wählen Sie das zur Berechnung gewünschte Jahr</h2>
+                    <div>
+                        <input type="radio" name="year" id="zwanzigneunzehn">
+                        <label for="nettoBrutto">2019</label>
+                    </div>
+                    <div class="whiteBorderLine">
+                        <input type="radio" name="year" id="zwanzigzwanzig">
+                        <label for="nettoBrutto">2020</label>
+                    </div>
+                    <div class="whiteBorderLine">
+                        <input type="radio" name="year" id="zwanzigeinundzwanzig">
+                        <label for="nettoBrutto">2021</label>
+                    </div>
+                </article>
+                <article>
+                    <h2>Soll die Berechnung für Sie als Einzelperson, oder im Splittingverfahren erfolgen?</h2>
+                    <div>
+                        <input type="radio" name="singlesplit" id="single">
+                        <label for="nettoBrutto">Single</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="singlesplit" id="split">
+                        <label for="nettoBrutto">Splittingverfahren</label>
+                    </div>
+                </article>
+                <article>
+                    <h2>Bitte geben Sie ihr zu versteuerndes Gesamteinkommen ein für das gewählte Jahr ein.</h2>
+                    <div>
+                        <input type="number" name="income" id="income" placeholder="Gesamtjahreseinkommen hier eingeben.">
+                        <input type="button" value="Berechnen" onclick="taxcalculator()">
+                    </div>
+                </article>
+            </form>
+        </section>
+        <section>
+            <div>
+                <h2>Ihr zur Berechnung verwendetes Gesamteinkommen:</h2>
+                <p id="anualIncome"></p>
+            </div>
+            <div>
+                <h2>Ihre Einkommensteuer für das Jahr <span id="taxyear"></span>:</h2>
+                <p id="incomeTax"></p>
+            </div>
+        </section>
+    </main>
+
+    
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
