@@ -16,7 +16,8 @@ Cloud: #F3F3F3
 }
 
 h2 {
-  font-size: 1.3rem;
+  margin: 2vh 0;
+  font-size: 1.2rem;
   color: #932432;
 }
 
@@ -24,9 +25,9 @@ body {
   background-color: #e2e8f6;
 }
 body main {
-  width: 50vw;
+  width: 414px;
   margin: 10vh auto;
-  padding: 20px;
+  padding: 10px;
   border: 4px solid #F3F3F3;
   border-radius: 5px;
   /* 
@@ -40,13 +41,14 @@ body main {
   } */
 }
 body main > section {
+  text-align: center;
   padding: 20px;
   background: #F3F3F3;
   border-radius: 5px;
 }
 body main > section h1 {
   color: #3C1874;
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-align: center;
   text-decoration: underline;
 }
