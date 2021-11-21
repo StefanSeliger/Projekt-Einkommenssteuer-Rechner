@@ -20,9 +20,9 @@ body {
 }
 
 h2 {
-  margin: 2vh 0;
-  font-size: 1.2rem;
+  margin: 5vh 0 2vh 0;
   color: #932432;
+  font-size: 1.2rem;
 }
 
 label {
